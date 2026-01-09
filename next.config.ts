@@ -1,3 +1,4 @@
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Rewrites for local development to redirect /api calls to the locally running backend
