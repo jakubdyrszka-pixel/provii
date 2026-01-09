@@ -1,0 +1,15 @@
+# Backend Configuration
+DATABASE_URL="postgresql+asyncpg://user:password@host/dbname"
+REDIS_URL="redis://host:6379"
+SECRET_KEY="your-secret-key-at-least-32-chars"
+
+# CRM (Optional)
+CRM_API_KEY=""
+CRM_API_URL=""
+
+# Email (Optional)
+SMTP_HOST=""
+SMTP_PORT=587
+SMTP_USER=""
+SMTP_PASSWORD=""
+FROM_EMAIL="info@example.com"
