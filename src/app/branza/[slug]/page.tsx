@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 import nichesData from '@/data/niches.json';
 import Hero from '@/components/Hero';
 import Philosophy from '@/components/Philosophy';
@@ -62,7 +63,9 @@ export default async function NichePage({ params }: PageProps) {
                 <FeaturesGrid />
                 <Pricing />
                 <FAQ />
-                <StartCTA />
+                <Suspense fallback={<div style={{ padding: '4rem', textAlign: 'center' }}>Ładowanie formularza...</div>}>
+                    <StartCTA />
+                </Suspense>
             </main>
         </div>
     );
