@@ -1,0 +1,20 @@
+{
+    "stomatolog": {
+        "name": "Stomatologia",
+        "title": "Dla Gabinetów Stomatologicznych",
+        "problem": "Pacjenci szukają 'dentysta blisko mnie', a Ty jesteś na 5. miejscu w wynikach wyszukiwania.",
+        "heroImage": "/images/niches/dentist.jpg"
+    },
+    "hydraulik": {
+        "name": "Usługi Hydrauliczne",
+        "title": "Dla Hydraulików i Serwisantów",
+        "problem": "Klienci potrzebują pilnej pomocy, wpisują 'hydraulik 24h', ale nie widzą Twojego numeru.",
+        "heroImage": "/images/niches/plumber.jpg"
+    },
+    "restauracja": {
+        "name": "Gastronomia",
+        "title": "Dla Restauracji i Lokali",
+        "problem": "Goście szukają 'dobra kolacja w okolicy', a Google promuje Twoją konkurencję.",
+        "heroImage": "/images/niches/restaurant.jpg"
+    }
+}

@@ -1,0 +1,71 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.03);
+    /* Glass approx */
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Typography styles for the content */
+.article h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+    color: var(--foreground);
+}
+
+.article section {
+    margin-bottom: 2rem;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    color: var(--foreground);
+}
+
+.article p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.article ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.article li {
+    margin-bottom: 0.5rem;
+}
+
+.article strong {
+    color: var(--foreground);
+    font-weight: 600;
+}
+
+.alert {
+    background: rgba(250, 204, 21, 0.1);
+    padding: 1rem;
+    border-left: 4px solid #FACC15;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}

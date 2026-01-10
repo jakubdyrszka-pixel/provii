@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background: var(--surface);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary);
+}
+
+.check {
+    color: var(--success);
+    margin-right: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 500;
+}

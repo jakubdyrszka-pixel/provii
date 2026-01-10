@@ -1,0 +1,137 @@
+.articleContainer {
+    min-height: 100vh;
+    padding: 8rem 1rem 5rem 1rem;
+}
+
+.header {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background: rgba(168, 83, 186, 0.1);
+    border: 1px solid rgba(168, 83, 186, 0.2);
+    color: #c084fc;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #d1d5db;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 2.5rem 0 1.5rem 0;
+    font-weight: 700;
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
+
+.content strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.content a {
+    color: #a853ba;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.backLink {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+}
+
+.backLink a {
+    display: flex;
+    align-items: center;
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.backLink a:hover {
+    color: #fff;
+}
