@@ -1,12 +1,10 @@
-import styles from '../legal.module.css';
-
 export default function SubscriptionPolicyPage() {
     return (
-        <article className={styles.article}>
+        <article>
             <h1>Polityka Subskrypcji</h1>
 
             <section>
-                <div className={styles.alert}>
+                <div className="bg-indigo-500/10 border border-indigo-500/20 p-6 rounded-lg text-indigo-200">
                     <p style={{ marginBottom: 0, color: 'inherit' }}>
                         Przejrzystość jest dla nas kluczowa. Poniżej znajdziesz szczegóły dotyczące działania naszego modelu subskrypcyjnego.
                     </p>

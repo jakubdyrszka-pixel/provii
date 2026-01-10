@@ -1,12 +1,12 @@
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 import nichesData from '@/data/niches.json';
-import Hero from '@/components/Hero';
+import Hero from '@/components/sections/Hero';
 import Philosophy from '@/components/Philosophy';
-import HowItWorks from '@/components/HowItWorks';
+import HowItWorks from '@/components/sections/HowItWorks';
 import CaseStudies from '@/components/CaseStudies';
 import FeaturesGrid from '@/components/FeaturesGrid';
-import Pricing from '@/components/Pricing';
+import Pricing from '@/components/sections/Pricing';
 import FAQ from '@/components/FAQ';
 import StartCTA from '@/components/StartCTA';
 import { Metadata } from 'next';
@@ -55,7 +55,6 @@ export default async function NichePage({ params }: PageProps) {
                 <Hero
                     title={niche.title}
                     subtitle={niche.problem}
-                    imageSrc={niche.heroImage}
                 />
                 <Philosophy />
                 <HowItWorks />
@@ -63,7 +62,7 @@ export default async function NichePage({ params }: PageProps) {
                 <FeaturesGrid />
                 <Pricing />
                 <FAQ />
-                <Suspense fallback={<div style={{ padding: '4rem', textAlign: 'center' }}>Ładowanie formularza...</div>}>
+                <Suspense fallback={<div>Ładowanie...</div>}>
                     <StartCTA />
                 </Suspense>
             </main>

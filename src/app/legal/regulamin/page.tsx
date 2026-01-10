@@ -1,8 +1,6 @@
-import styles from '../legal.module.css';
-
 export default function TermsPage() {
     return (
-        <article className={styles.article}>
+        <article>
             <h1>Regulamin Serwisu</h1>
 
             <section>

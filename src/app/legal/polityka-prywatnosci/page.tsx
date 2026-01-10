@@ -1,8 +1,6 @@
-import styles from '../legal.module.css';
-
 export default function PrivacyPolicyPage() {
     return (
-        <article className={styles.article}>
+        <article>
             <h1>Polityka Prywatności</h1>
 
             <section>

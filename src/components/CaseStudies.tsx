@@ -1,5 +1,3 @@
-import styles from './CaseStudies.module.css';
-
 const cases = [
     {
         industry: 'Usługi Lokalne (Stomatologia)',
@@ -32,20 +30,38 @@ const cases = [
 
 export default function CaseStudies() {
     return (
-        <section className={styles.section}>
-            <h2 className="section-title">Jak to działa w praktyce?</h2>
-            <div className={styles.grid}>
-                {cases.map((scenario, index) => (
-                    <div key={index} className={styles.card}>
-                        <span className={styles.industry}>{scenario.industry}</span>
-                        <h3 className={styles.title}>{scenario.title}</h3>
-                        <p className={styles.resultDesc} style={{ marginBottom: '0.5rem' }}><strong>Wyzwanie:</strong> {scenario.problem}</p>
-                        <p className={styles.resultDesc}><strong>Rozwiązanie:</strong> {scenario.solution}</p>
-                        <div className={styles.stat}>{scenario.stat}</div>
-                        <p className={styles.resultDesc}>{scenario.resultDesc}</p>
-                        <div className={styles.tagline}>{scenario.tagline}</div>
-                    </div>
-                ))}
+        <section className="py-24 bg-zinc-900/30">
+            <div className="container mx-auto px-6">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Jak to działa w praktyce?</h2>
+                    <p className="text-zinc-400">Prawdziwe wyniki dla prawdziwych biznesów.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {cases.map((scenario, index) => (
+                        <div key={index} className="glass-panel p-8 hover:bg-white/5 transition-all duration-300 flex flex-col h-full">
+                            <span className="text-xs font-mono uppercase tracking-widest text-indigo-400 mb-4">{scenario.industry}</span>
+                            <h3 className="text-xl font-bold text-white mb-6 leading-tight">{scenario.title}</h3>
+
+                            <div className="space-y-4 mb-8 flex-grow">
+                                <p className="text-zinc-400 text-sm">
+                                    <strong className="text-zinc-200 block mb-1">Wyzwanie:</strong>
+                                    {scenario.problem}
+                                </p>
+                                <p className="text-zinc-400 text-sm">
+                                    <strong className="text-zinc-200 block mb-1">Rozwiązanie:</strong>
+                                    {scenario.solution}
+                                </p>
+                            </div>
+
+                            <div className="border-t border-white/10 pt-6 mt-auto">
+                                <div className="text-4xl font-bold text-white mb-2">{scenario.stat}</div>
+                                <p className="text-zinc-500 text-xs mb-4">{scenario.resultDesc}</p>
+                                <div className="text-indigo-300 italic text-sm">{scenario.tagline}</div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

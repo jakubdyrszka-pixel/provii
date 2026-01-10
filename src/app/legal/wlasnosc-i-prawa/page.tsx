@@ -1,8 +1,6 @@
-import styles from '../legal.module.css';
-
 export default function OwnershipPage() {
     return (
-        <article className={styles.article}>
+        <article>
             <h1>Własność Intelektualna i Prawa Autorskie</h1>
 
             <section>
